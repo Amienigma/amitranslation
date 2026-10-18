@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Attachment Translator",
+      "hasCanvas": false,
+      "bodyTextLen": 1315,
+      "bodyTextHash": "b27017ea49ac8a3a16a51895639036a8b63ced5e56772747788e0c4488c6497e",
+      "bodyTextPrefix": "WORDING DESK Attachment Translator Reword a hard message without",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Attachment Translator",
+      "hasCanvas": false,
+      "bodyTextLen": 1291,
+      "bodyTextHash": "541eedd3077b8e763ed26c085f4c837b236a23ed7fd7d7374cbb99d4f63dbc49",
+      "bodyTextPrefix": "WORDING DESK Attachment Translator Reword a hard message without",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
