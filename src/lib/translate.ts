@@ -71,7 +71,7 @@ function includes<T extends string>(list: readonly T[], value: unknown): value i
 function normalize(data: TranslateInput): Normalized | { error: string } {
   if (!data || typeof data !== "object") return { error: INPUT_ERROR };
   const rawInput =
-    typeof data.rawInput === "string" ? data.rawInput.replace(/\u0000/g, "").trim() : "";
+    typeof data.rawInput === "string" ? data.rawInput.split(String.fromCharCode(0)).join("").trim() : "";
   if (rawInput.length < 2 || rawInput.length > 1500) return { error: INPUT_ERROR };
   if (!includes(TENDENCIES, data.senderStyle) || !includes(TENDENCIES, data.receiverStyle)) {
     return { error: INPUT_ERROR };
@@ -193,6 +193,7 @@ export const translateMessage = createServerFn({ method: "POST" })
 
     const apiKey = process.env.XAI_API_KEY;
     if (!apiKey) {
+      console.error("config_missing XAI_API_KEY is not set; translation is disabled");
       return { kind: "error", message: "Suggestions are temporarily unavailable." };
     }
 

@@ -3,3 +3,7 @@ node_modules/
 .github_repo
 .env
 .env.*
+.vercel/anonymous.json
+.vercel/project.json
+.vercel/static-build/
+.vercel/output/diagnostics/
